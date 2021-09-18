@@ -1,0 +1,140 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #222222;
+}
+
+#grid {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 0;
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#grid {
+    max-width: 900px;
+}
+    #grid li {
+        list-style-type: none;
+        position: relative;
+        float: left;
+        width: 200px;
+        margin: 5px;
+        margin-bottom: -56.74px;
+    }
+        #grid li:nth-child(8n+5), #grid li:nth-child(8n+6), #grid li:nth-child(8n+7), #grid li:nth-child(8n+8) {
+            -o-transform: translateX(calc(50% + 5px));
+            -moz-transform: translateX(calc(50% + 5px));
+            -webkit-transform: translateX(calc(50% + 5px));
+            -ms-transform: translateX(calc(50% + 5px));
+            transform: translateX(calc(50% + 5px));
+        }
+
+        #grid li.special .hexagon {
+            background: #ffcb69;
+        }
+
+            #grid li.special .hexagon:before, #grid li.special .hexagon:after {
+                border-top-color: #ffcb69;
+                border-bottom-color: #ffcb69;
+            }
+
+.hexContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hexagon {
+    position: relative;
+    width: 200px;
+    height: 115.47px;
+    background-color: #b4c7e7;
+    margin: 57.74px 0;
+}
+
+    .hexagon:before,
+    .hexagon:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+    }
+
+    .hexagon:before {
+        bottom: 100%;
+        border-bottom: 57.74px solid #b4c7e7;
+    }
+
+    .hexagon:after {
+        top: 100%;
+        width: 0;
+        border-top: 57.74px solid #b4c7e7;
+    }
+
+
+.hexText {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: default;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: table-row;
+}
+    .hexText span {
+        display: table-cell;
+        line-height: 18px;
+        padding: 10px;
+    }
+.hexImages {
+    text-align: center;
+    width: 200px;
+    height: 130px;
+    cursor: default;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 70px 30px 0 30px;
+}
+.hexImages img {
+    max-height: 25px;   
+    max-width: 25px;   
+}
+
+.completed .hexagon {
+    background-color: #48505c !important;
+}
+.completed .hexagon:before, .completed .hexagon:after {
+    border-top-color: #48505c !important;
+    border-bottom-color: #48505c !important;
+}
+.special.completed .hexagon {
+    background-color: #66512a !important;
+}.special.completed .hexagon:before, .special.completed .hexagon:after {
+    border-top-color: #66512a !important;
+    border-bottom-color: #66512a !important;
+}
+.completed img {
+    filter: brightness(0.4);
+}
