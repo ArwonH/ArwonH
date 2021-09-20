@@ -236,3 +236,14 @@ li.completed .hexContent:hover + .hexagon {
         border-top-color: #394049 !important;
         border-bottom-color: #394049 !important;
     }
+h1 {
+    text-align:center;
+    color:#fff;
+    font-size: 40px;
+}
+h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
